@@ -73,7 +73,7 @@ include('nav.php');
                            <i class="fas fa-envelope"></i>
                            WahajAli23@gmail.com
                        </div>
-                       <button class="contact-me"> <a href="msj.html">Contact Me</a></button>
+                       <button onclick="openChatSystem()" class="contact-me"> <a href="">Contact Me</a></button>
                        </div>
                    </div>
                  </div> 
@@ -896,6 +896,11 @@ include('nav.php');
            </div> 
        </div>  
 </section>  
+<script>
+        function openChatSystem() {
+            window.open('http://localhost:3000', '_blank');
+        }
+    </script>
 <script src="..\manu.js"></script>
 <?php
 include('footer.php');

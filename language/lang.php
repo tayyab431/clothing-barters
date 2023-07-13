@@ -173,7 +173,8 @@ $footer = array(
         'Site Links', 
         'Custom order',
         'Sports-Wear', 
-        'follow us'
+        'follow us',
+        'Payment'
        
     ),
     'urdu' => array(
@@ -181,7 +182,8 @@ $footer = array(
         'سائٹ کے لنکس', 
         'حسب ضرورت آرڈر',
         'کھیلوں کا لباس', 
-        'ہمیں فالو کریں'
+        'ہمیں فالو کریں',
+        'ادائیگی'
     )
 );
 $login_page = array(

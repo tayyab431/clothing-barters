@@ -1,5 +1,6 @@
 <?php
 include('include/connect.php');
+
 ?>
 <?php
 $path = dirname(__FILE__);
@@ -103,7 +104,7 @@ include($path . '/session/session.php');
     <input type="checkbox" class="checkbox"> <span class="span"><?php echo $login_page[$language]['4']?></span>
     <button type="submit" class="submit-btn" name="user_log" ><?php echo $login_page[$language]['0']?></button>
 </form>
-<form id="register" action="web-form.php" method="post" class="input-group">
+<form id="register" action="'web-form.php" method="post" class="input-group">
     <input type="text" style="text-transform: none;"
     class="input-feild" placeholder=" <?php echo $login_page[$language]['2']?>" required="required" name="user_name">
     <input type="email" style="text-transform: none;" class="input-feild" placeholder="<?php echo $login_page[$language]['5']?>" required="required" name="user_email"/>
@@ -180,3 +181,4 @@ include($path . '/session/session.php');
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 </html>
+

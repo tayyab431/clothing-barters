@@ -1,3 +1,4 @@
+
 <?php
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -5,7 +6,9 @@ error_reporting(E_ALL);
 // Database connection details
 
 session_start();
-$host = '127.0.0.1';
+// Database connection details
+$host = '172.18.0.2';
+
 $db = 'clothdatabase';
 $user = 'root';
 $password = '786110';
@@ -13,11 +16,12 @@ $password = '786110';
 try {
     $con = new PDO("mysql:host=$host;dbname=$db;charset=utf8mb4", $user, $password);
     $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully";
+    echo "Connect successfully";
     //header("Location: user_interface.php");
 } catch (PDOException $e) {
-    die("Connection failed: " . $e->getMessage());
+    die("web-form.php Connection failed: " . $e->getMessage());
 }
+
 
 if (isset($_POST['user_register'])) {
     $user_username = $_POST['user_name'];
